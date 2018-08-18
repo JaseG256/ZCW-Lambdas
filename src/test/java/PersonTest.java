@@ -28,6 +28,7 @@ public class PersonTest {
         Person person = new Person(Person.Sex.MALE, "Jason", birthday, "JT@yahoo.com");
         Person.Sex expected = Person.Sex.MALE;
         Person.Sex actual = person.getGender();
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -35,6 +36,7 @@ public class PersonTest {
         String expected = "Jason";
         person.setName("Jason");
         String actual = person.getName();
+        assertEquals(expected, actual);
     }
 
     @Test

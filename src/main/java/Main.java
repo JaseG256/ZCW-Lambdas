@@ -33,8 +33,5 @@ public class Main {
                 && p.getBirthday().getYear() < 1990);
         System.out.println();
         Members.printPersons(myCrew.memberList, p -> p.getAge() > 25);
-
-
-
     }
 }
